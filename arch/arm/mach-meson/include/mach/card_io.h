@@ -38,14 +38,26 @@ typedef struct _Card_Config
 
 typedef enum _SDIO_Pad_Type
 {
-	SDIO_CARD_7_12,
-	SDIO_CARD_13_19,
-	SDIO_CARD_20_25,
-	SDIO_CARD_4_5_16,
-	SDIO_CARD_2_3_16,
-	SDIO_A_GPIOX_0_3,
-	SDIO_B_CARD_0_5,
-	SDIO_C_BOOT_0_3
+    SDIO_CARD_7_12,
+    SDIO_CARD_13_19,
+    SDIO_CARD_20_25,
+    SDIO_CARD_4_5_16,
+    SDIO_CARD_2_3_16,
+    SDIO_A_GPIOX_0_3,
+    SDIO_B_CARD_0_5,
+    SDIO_C_BOOT_0_3,
+    SDIO_GPIOA_0_5,
+    SDIO_GPIOA_9_14,
+    SDIO_GPIOB_2_7,
+    SDIO_GPIOE_6_11,
+
+    SDHC_CARD_0_5,	//SDHC-B
+    SDHC_BOOT_0_11,	//SDHC-C
+    SDHC_GPIOX_0_9,	//SDHC-A
+
+    SDXC_CARD_0_5,	//SDXC-B
+    SDXC_BOOT_0_11,	//SDXC-C
+    SDXC_GPIOX_0_9	//SDXC-A
 } SDIO_Pad_Type_t;
 
 typedef enum _Card_Work_Mode
